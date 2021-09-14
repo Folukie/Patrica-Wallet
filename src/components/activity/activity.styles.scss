@@ -1,0 +1,101 @@
+.activity {
+  background: #f9fafc;
+  width: 520px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  padding: 20px 0 10px;
+}
+.activities {
+  background: #ffffff;
+  border-radius: 24px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px 0;
+  height: max-content;
+}
+.platform {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  cursor: pointer;
+  padding: 0 25px;
+  transition: all .6s;
+
+
+  &__details {
+    display: flex;
+    align-items: center;
+  }
+  &__icon {
+    width: 60px;
+  }
+  &__name h5,
+  &__name small {
+    margin: 0;
+  }
+  &__name h5 {
+    color: #575a65;
+    font-weight: 400;
+  }
+  &__name small {
+    font-size: 12px;
+    color: #9da8b6;
+  }
+  &__price {
+    color: #9da8b6;
+  }
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+  padding: 0 25px;
+
+
+    & > p {
+      font-size: 14px;
+      line-height: 24px;
+      color: #9da8b6;
+      font-weight: 600;
+    }
+    & > .date {
+      display: flex;
+    }
+    & > .date > p {
+      font-size: 12px;
+      line-height: 20px;
+      display: flex;
+      color: #9da8b6;
+      background: #f9fafc;
+      border-radius: 8px;
+      padding: 3px 6px;
+      margin: 0 10px;
+    }
+  }
+
+  &:hover{
+    background-color:  #FFEEA7;
+  }
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 50px 40px 40px;
+  width: 27%;
+  margin-left: auto;
+  align-items: center;
+}
+
+@media only screen and (max-width: 500px) {
+ .activity{
+   width: auto;
+ }
+ .platform__head {
+  display: block;
+ }
+ .platform__head > .date {
+  margin-left: -15px;
+ }
+ }

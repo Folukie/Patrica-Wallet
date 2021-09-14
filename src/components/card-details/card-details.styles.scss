@@ -1,0 +1,45 @@
+.card__info {
+  background: #f9fafc;
+  border-radius: 24px;
+  display: flex;
+  padding: 25px;
+  margin: 40px 0;
+  justify-content: space-between;
+
+  &__details {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+    .bal > h6 {
+      color: #006156;
+    }
+    & > div {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      p,
+      h6 {
+        text-align: left;
+        margin: 0;
+        padding: 6px 0;
+      }
+      p {
+        color: #9da8b6;
+      }
+      h6 {
+        font-size: 16px;
+        line-height: 28px;
+        color: #575a65;
+        font-weight: 400;
+      }
+    }
+  }
+}
+.address > h6 {
+  display: flex;
+}
+@media only screen and (max-width: 500px) {
+  .card__info {
+    display: block;
+  }
+}
