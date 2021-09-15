@@ -1,5 +1,5 @@
 import Button from "../button/button.components";
-import Toggle from "../toggle/toggle.components";
+import Toggle from "../toggle/toggle.component";
 
 import "./card.styles.scss";
 
@@ -29,7 +29,7 @@ const Card = () => {
       </div>
       <div className="card__images">
         <img
-          src="./images/patric-card.png"
+          src="./images/patricia-card.svg"
           alt="Patricia card"
           className="patricia-card"
         />

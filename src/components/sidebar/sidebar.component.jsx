@@ -1,10 +1,9 @@
-import { useState } from "react";
 import { Link, BrowserRouter } from "react-router-dom";
 
 import "./sidebar.styles.scss";
 
 const Sidebar = () => {
-  const [links, setLinks] = useState([
+  const links = [
     {
       id: 1,
       title: "Dashboard",
@@ -35,7 +34,7 @@ const Sidebar = () => {
       icon: "./images/referrals.svg",
       status: "inactive",
     },
-  ]);
+  ];
   return (
     <BrowserRouter>
       <sidebar>

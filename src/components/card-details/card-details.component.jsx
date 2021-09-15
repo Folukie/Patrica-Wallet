@@ -1,10 +1,8 @@
-import { useState } from "react";
-
 import Button from "../button/button.components";
 import "./card-details.styles.scss";
 
 const CardDetails = () => {
-  const [details, setDetails] = useState([
+  const details = [
     {
       balance: 3000.73,
       cardName: "Netflix Card",
@@ -12,7 +10,7 @@ const CardDetails = () => {
       address: "Patricia HQ, SA 109827",
       date: "March 3rd 2020, 9:48:36 am",
     },
-  ]);
+  ];
   return (
     <>
       <div className="card__info">
@@ -32,9 +30,10 @@ const CardDetails = () => {
             </div>
             <div className="address">
               <p>Billing Address: </p>
-              <h6>{detail.address} 
-              &nbsp;
-              <img src="./images/copy.svg" alt="copy" />
+              <h6>
+                {detail.address}
+                &nbsp;
+                <img src="./images/copy.svg" alt="copy" />
               </h6>
             </div>
             <div className="date">

@@ -1,9 +1,8 @@
 import "./activity.styles.scss";
 
-import { useState } from "react";
 
 const Activity = () => {
-  const [infos, setInfos] = useState([
+  const infos = [
     {
       id: 1,
       text: "Amazon",
@@ -60,7 +59,7 @@ const Activity = () => {
       price: 990,
       image: "./images/apple.svg",
     },
-  ]);
+  ];
   return (
     <div className="activity">
       <div className="profile">
@@ -82,9 +81,12 @@ const Activity = () => {
         {infos.map((info) => (
           <div key={info.id} className="platform">
             <div className="platform__details">
-              <div className="platform__icon">
-                <img src={info.image} alt={info.text} />
-              </div>
+              <img
+                src={info.image}
+                alt={info.text}
+                className="platform__icon"
+              />
+
               <div className="platform__name">
                 <h5>{info.text}</h5>
                 <small>{info.date}</small>

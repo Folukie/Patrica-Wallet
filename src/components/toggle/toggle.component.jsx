@@ -1,7 +1,6 @@
 import "./toggle.styles.scss";
 import { Spin as Hamburger } from "hamburger-react";
 
-import Sidebar from "../sidebar/sidebar.component";
 import { useState } from "react";
 
 const Toggle = () => {
@@ -20,9 +19,9 @@ const Toggle = () => {
             const sidebar = document.querySelector("sidebar");
           if (toggled) {
            
-            sidebar.style.display = "none";
-          } else {
             sidebar.style.display = "grid";
+          } else {
+            sidebar.style.display = "none";
           }
         }}
       />

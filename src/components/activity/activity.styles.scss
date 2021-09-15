@@ -1,6 +1,6 @@
 .activity {
   background: #f9fafc;
-  width: 520px;
+  width: 490px;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
@@ -11,48 +11,53 @@
   border-radius: 24px;
   width: 80%;
   margin: 0 auto;
-  padding: 10px 0;
+  padding: 0 0 10px;
   height: max-content;
 }
 .platform {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px 0;
   cursor: pointer;
-  padding: 0 25px;
-  transition: all .6s;
-
+  padding: 10px 25px;
+  transition: all 0.6s;
 
   &__details {
     display: flex;
     align-items: center;
+    gap: 1rem;
   }
   &__icon {
     width: 60px;
   }
-  &__name h5,
-  &__name small {
-    margin: 0;
+  &__name {
+    & h5,
+    & small {
+      margin: 0;
+    }
+    & h5 {
+      color: #575a65;
+      font-weight: 400;
+    }
+    & small {
+      font-size: 12px;
+      color: #9da8b6;
+    }
   }
-  &__name h5 {
-    color: #575a65;
-    font-weight: 400;
-  }
-  &__name small {
-    font-size: 12px;
-    color: #9da8b6;
-  }
+
   &__price {
-    color: #9da8b6;
+    h6 {
+      color: #9da8b6;
+      font-size: 14px;
+      font-weight: 400;
+    }
   }
   &__head {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 10px 0;
-  padding: 0 25px;
-
+    padding: 0 25px;
 
     & > p {
       font-size: 14px;
@@ -62,21 +67,21 @@
     }
     & > .date {
       display: flex;
-    }
-    & > .date > p {
-      font-size: 12px;
-      line-height: 20px;
-      display: flex;
-      color: #9da8b6;
-      background: #f9fafc;
-      border-radius: 8px;
-      padding: 3px 6px;
-      margin: 0 10px;
+      & > p {
+        font-size: 12px;
+        line-height: 20px;
+        display: flex;
+        color: #9da8b6;
+        background: #f9fafc;
+        border-radius: 8px;
+        padding: 3px 6px;
+        margin: 0 10px;
+      }
     }
   }
 
-  &:hover{
-    background-color:  #FFEEA7;
+  &:hover {
+    background-color: #ffeea7;
   }
 }
 
@@ -88,14 +93,21 @@
   align-items: center;
 }
 
-@media only screen and (max-width: 500px) {
- .activity{
-   width: auto;
- }
- .platform__head {
-  display: block;
- }
- .platform__head > .date {
-  margin-left: -15px;
- }
- }
+@media only screen and (max-width: 900px) {
+  .activity {
+    width: auto;
+  }
+  .platform__head {
+    display: block;
+  }
+  .platform__head > .date {
+    margin-left: -15px;
+  }
+  .profile {
+    width: auto;
+  }
+  .activities {
+    width: 90%;
+    padding: 0;
+  }
+}
