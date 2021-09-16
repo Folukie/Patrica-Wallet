@@ -6,7 +6,7 @@ import "./wallet.page.scss";
 
 const WalletPage = () => {
   return (
-    <div className="main">
+    <div className="wallet-page">
       <CardContent />
       <Activity />
     </div>

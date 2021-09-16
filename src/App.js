@@ -1,19 +1,16 @@
-import "./App.css";
+import { useEffect } from "react";
+import { Route, Switch, useHistory, useLocation } from "react-router-dom";
+import { WALLET_ROUTE } from "./constants/routes";
+
 import Sidebar from "./components/sidebar/sidebar.component";
 import WalletPage from "./pages/wallet/wallet.page";
-
-import { Route, Switch } from "react-router-dom";
-import { WALLET_ROUTE } from "./constants/routes";
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
-import { useHistory } from "react-router-dom";
 
 function App() {
   const location = useLocation();
   const history = useHistory();
 
   // Automatically redirects all route to wallet page
-  
+
   useEffect(() => {
     if (location.pathname !== WALLET_ROUTE) {
       history.push(WALLET_ROUTE);
@@ -25,11 +22,13 @@ function App() {
       <div className="App">
         <Sidebar />
       </div>
-      <Switch>
-        <Route path={WALLET_ROUTE}>
-          <WalletPage />
-        </Route>
-      </Switch>
+      <main>
+        <Switch>
+          <Route path={WALLET_ROUTE}>
+            <WalletPage />
+          </Route>
+        </Switch>
+      </main>
     </div>
   );
 }

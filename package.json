@@ -1,7 +1,8 @@
 {
-  "name": "patricia",
+  "name": "patricia-wallet",
   "version": "0.1.0",
   "private": true,
+  "author": {"name": "Foluke Odus"},
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",

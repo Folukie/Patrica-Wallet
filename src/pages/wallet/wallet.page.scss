@@ -1,15 +1,15 @@
-.main {
-    margin-left: 260px;
-    display: flex;
-    justify-content: space-between;
-  
-    @media only screen and (max-width: 1000px) {
-      margin-left: 0;
-      flex-direction: column;
-      padding: 0;
-    }
-    @media screen and (max-width: 1280px) and (min-width: 1001px){
-        flex-direction: column;
-    }
+.wallet-page {
+  margin-left: 260px;
+  display: flex;
+  justify-content: space-between;
+
+  @media only screen and (max-width: 1000px) {
+    margin-left: 0;
+    flex-direction: column;
+    padding: 0;
   }
-  
+
+  @media screen and (max-width: 1280px) and (min-width: 1001px) {
+    flex-direction: column;
+  }
+}

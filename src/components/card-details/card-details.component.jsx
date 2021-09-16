@@ -42,7 +42,7 @@ const CardDetails = () => {
             </div>
           </div>
         ))}
-        <Button text="Fund Card" styles="green-btn" />
+        <Button text="Fund Card" type="success" />
       </div>
     </>
   );

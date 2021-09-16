@@ -3,9 +3,6 @@
 
 Implementing a dashboard view for the Patricia wallet page using React and SASS/SCSS.
 
-## Commands
-
-After cloning this project, these commands can be used
 
 ## Playing locally
 
@@ -21,11 +18,10 @@ Then, run the application in development mode.
 
 ## Issues faced
 
-No issues faced.
+After deploying on netlify, it returned a 404 error. I fixed this by adding a redirect file in the public folder.
 
 ## Todo
-- Create a card number component
-- Make card number invisble, reduce card width 
-and blur out card on card click
+- Make card component accept a custom credit card number.
+- Toggle credit card number visibility and blur card on card click.
 
 

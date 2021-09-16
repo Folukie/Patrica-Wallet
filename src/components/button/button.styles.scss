@@ -9,31 +9,37 @@ button {
   font-size: 16px;
   cursor: pointer;
   transition: all 0.5s;
-}
-.green-btn {
-  background-color: #ffffff;
-  border-color: #006156;
-  color: #006156;
-  &:hover {
-    background-color: #006156;
-    color: #fff;
+
+  &.green-btn {
+    background-color: #ffffff;
+    border-color: #006156;
+    color: #006156;
+   
+    &:hover {
+      background-color: #006156;
+      color: #fff;
+    }
   }
-}
-.red-btn {
-  background-color: #fff;
-  border-color: #cc4945;
-  color: #cc4945;
-  &:hover {
-    background-color: #cc4945;
-    color: #fff;
+  
+  &.red-btn {
+    background-color: #fff;
+    border-color: #cc4945;
+    color: #cc4945;
+
+    &:hover {
+      background-color: #cc4945;
+      color: #fff;
+    }
   }
-}
-.yellow-btn {
-  background-color: #ffce00;
-  color: #1d1e2c;
-  border-color: #ffce00;
-  &:hover {
-    opacity: 0.8;
+
+  &.yellow-btn {
+    background-color: #ffce00;
+    color: #1d1e2c;
+    border-color: #ffce00;
+    
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }
 

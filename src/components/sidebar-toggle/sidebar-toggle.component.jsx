@@ -1,4 +1,4 @@
-import "./toggle.styles.scss";
+import "./sidebar-toggle.styles.scss";
 import { Spin as Hamburger } from "hamburger-react";
 
 import { useState } from "react";

@@ -3,36 +3,30 @@
         "id": 1,
         "title": "Dashboard",
         "icon": "./images/dashboard.svg",
-        "status": "inactive",
         "path": "/"
     },
     {
         "id": 2,
         "title": "activity",
         "icon": "./images/activity.svg",     
-        "status": "inactive",
         "path": "/"
-
     },
     {
         "id": 3,
         "title": "wallet",
         "icon": "./images/wallet.svg",
-        "status": "active",
         "path": "/wallet"
    },
     {
         "id": 4,
         "title": "products",
         "icon": "./images/products.svg", 
-        "status": "inactive",
         "path": "/"
     },
     {
         "id": 5,
         "title": "referrals",
         "icon": "./images/referrals.svg",
-        "status": "inactive",
         "path": "/"
     }
   ]

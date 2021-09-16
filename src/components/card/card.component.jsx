@@ -1,5 +1,5 @@
 import Button from "../button/button.components";
-import Toggle from "../sidebar/toggle/toggle.component";
+import Toggle from "../sidebar-toggle/sidebar-toggle.component";
 
 import "./card.styles.scss";
 
@@ -23,7 +23,7 @@ const Card = () => {
             <p>Lorem Ipsum dolor sit amet</p>
           </div>
         </div>
-        <Button text="Create New Card" styles="yellow-btn" />
+        <Button text="Create New Card" type="warning" />
       </div>
       <div className="card__images">
         <img
@@ -39,8 +39,8 @@ const Card = () => {
       </div>
       <div>
         <div className="buttons">
-          <Button text="Freeze Card" styles="green-btn" />
-          <Button text="Delete Card" styles="red-btn" />
+          <Button text="Freeze Card" type="success" />
+          <Button text="Delete Card" type="danger" />
         </div>
       </div>
     </div>
