@@ -5,7 +5,7 @@ import "./sidebar.styles.scss";
 const Sidebar = () => {
   return (
     
-      <aside>
+      <aside className="sidebar">
         <div className="logo">
           <img src="./images/patricia-logo.svg" alt="patricia logo" />
         </div>

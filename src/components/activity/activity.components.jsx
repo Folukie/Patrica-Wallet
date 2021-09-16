@@ -1,5 +1,6 @@
 import "./activity.styles.scss";
 import activities from "../../data/activities.json";
+import { numberWithCommas } from "../../utils/utils";
 
 const Activity = () => {
   return (
@@ -35,7 +36,7 @@ const Activity = () => {
               </div>
             </div>
             <div className="platform__price">
-              <h6>${activity.price}</h6>
+              <h6>${numberWithCommas(activity.price)} </h6>
             </div>
           </div>
         ))}

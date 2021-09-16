@@ -91,11 +91,16 @@
   margin-left: auto;
   align-items: center;
 }
-
-@media only screen and (max-width: 1000px) {
-  .activity {
+@media screen and (max-width: 1280px) and (min-width: 1001px){
+  .activity{
     width: auto;
     padding: 20px 0;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .activity {
+    padding: 20px 0;
+    width: 100%;
   }
   .platform__head {
     display: block;
@@ -111,3 +116,5 @@
     padding: 0;
   }
 }
+
+

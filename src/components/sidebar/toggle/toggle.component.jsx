@@ -16,7 +16,7 @@ const Toggle = () => {
         color="#fff"
         duration={0.4}
         onToggle={(toggled) => {
-          const sidebar = document.querySelector("sidebar");
+          const sidebar = document.querySelector(".sidebar");
           if (toggled) {
             sidebar.style.display = "grid";
             sidebar.style.transform = " translateX(0)";

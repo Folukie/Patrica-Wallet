@@ -82,6 +82,7 @@
   }
 }
 
-.card__images img:hover {
-  filter: blur(5px);
+.blurred-card{
+  filter: blur(1px);
+
 }

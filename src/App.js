@@ -12,6 +12,8 @@ function App() {
   const location = useLocation();
   const history = useHistory();
 
+  // Automatically redirects all route to wallet page
+  
   useEffect(() => {
     if (location.pathname !== WALLET_ROUTE) {
       history.push(WALLET_ROUTE);
