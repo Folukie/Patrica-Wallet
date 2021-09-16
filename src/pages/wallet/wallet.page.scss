@@ -1,0 +1,12 @@
+.main {
+    margin-left: 260px;
+    display: flex;
+    justify-content: space-between;
+  
+    @media only screen and (max-width: 1000px) {
+      margin-left: 0;
+      flex-direction: column;
+      padding: 0;
+    }
+  }
+  

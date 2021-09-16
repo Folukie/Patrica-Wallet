@@ -1,7 +1,7 @@
 a {
   text-decoration: none;
 }
-sidebar {
+aside {
   height: 100%;
   width: 220px;
   position: fixed;
@@ -41,11 +41,11 @@ ul {
 
     &.active,
     &:hover {
-     & a{
-      background: #ffeea7;
-      border-radius: 0 14px 14px 0;
-      color: #006156;
-     }
+      & a {
+        background: #ffeea7;
+        border-radius: 0 14px 14px 0;
+        color: #006156;
+      }
     }
 
     a {
@@ -60,15 +60,13 @@ ul {
       line-height: 24px;
 
       color: #979aa5;
-
-    
     }
-    
   }
 }
-@media only screen and (max-width: 900px) {
-  sidebar {
+@media only screen and (max-width: 1000px) {
+  aside {
     width: 230px;
-    display: none;
+    transition: all 0.25s ease-in-out;
+    transform: translate(-100%);
   }
 }

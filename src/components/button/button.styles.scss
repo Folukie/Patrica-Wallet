@@ -32,17 +32,14 @@ button {
   background-color: #ffce00;
   color: #1d1e2c;
   border-color: #ffce00;
-  &:hover{
-     opacity: .8;
-
+  &:hover {
+    opacity: 0.8;
   }
 }
 
-@media only screen and (max-width: 900px) {
- button{
-   width: max-content;
-   margin: 20px 0 10px;
- }
-
-
+@media only screen and (max-width: 1000px) {
+  button {
+    width: max-content;
+    margin: 20px 0 10px;
+  }
 }

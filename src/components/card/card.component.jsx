@@ -7,11 +7,9 @@ const Card = () => {
   return (
     <div className="card">
       <div className="card__title">
-
         <img src="./images/back.svg" alt="back" />
         <h3>Cards</h3>
         <Toggle />
-
       </div>
       <div className="card__heading">
         <div className="head">

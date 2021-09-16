@@ -1,65 +1,7 @@
 import "./activity.styles.scss";
-
+import activities from "../../data/activities.json";
 
 const Activity = () => {
-  const infos = [
-    {
-      id: 1,
-      text: "Amazon",
-      date: "Just now",
-      price: 377.23,
-      image: "./images/amazon.svg",
-    },
-    {
-      id: 2,
-      text: "Nike",
-      date: "Today",
-      price: 237737.55,
-      image: "./images/nike.svg",
-    },
-    {
-      id: 3,
-      text: "Starbucks",
-      date: "Yesterday",
-      price: 873873834.3,
-      image: "./images/starbucks.svg",
-    },
-    {
-      id: 4,
-      text: "Netflix",
-      date: "June 17",
-      price: 599,
-      image: "./images/netflix.svg",
-    },
-    {
-      id: 5,
-      text: "Apple",
-      date: "June 15",
-      price: 872,
-      image: "./images/icon.svg",
-    },
-    {
-      id: 6,
-      text: "Starbucks",
-      date: "June 13",
-      price: 452,
-      image: "./images/starbucks.svg",
-    },
-    {
-      id: 7,
-      text: "Nike",
-      date: "June 11",
-      price: 452,
-      image: "./images/nike.svg",
-    },
-    {
-      id: 8,
-      text: "Apple",
-      date: "June 09",
-      price: 990,
-      image: "./images/apple.svg",
-    },
-  ];
   return (
     <div className="activity">
       <div className="profile">
@@ -78,22 +20,22 @@ const Activity = () => {
             <img src="./images/download.svg" alt="" />
           </div>
         </div>
-        {infos.map((info) => (
-          <div key={info.id} className="platform">
+        {activities.map((activity) => (
+          <div key={activity.id} className="platform">
             <div className="platform__details">
               <img
-                src={info.image}
-                alt={info.text}
+                src={activity.image}
+                alt={activity.text}
                 className="platform__icon"
               />
 
               <div className="platform__name">
-                <h5>{info.text}</h5>
-                <small>{info.date}</small>
+                <h5>{activity.text}</h5>
+                <small>{activity.date}</small>
               </div>
             </div>
             <div className="platform__price">
-              <h6>${info.price}</h6>
+              <h6>${activity.price}</h6>
             </div>
           </div>
         ))}

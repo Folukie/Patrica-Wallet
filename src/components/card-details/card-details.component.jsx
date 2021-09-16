@@ -14,8 +14,8 @@ const CardDetails = () => {
   return (
     <>
       <div className="card__info">
-        {details.map((detail) => (
-          <div className="card__info__details" key={detail.id}>
+        {details.map((detail, idx) => (
+          <div className="card__info__details" key={idx}>
             <div className="bal">
               <p>Card Balance: </p>
               <h6>${detail.balance}</h6>

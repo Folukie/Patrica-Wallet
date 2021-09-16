@@ -1,14 +1,14 @@
 .mobile-toggle {
   display: none;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   .mobile-toggle {
     display: block;
-   margin-left: auto;
-   position:fixed;
-   right: 10px;
-   z-index: 99;
-    
+    margin-left: auto;
+    position: fixed;
+    right: 10px;
+    z-index: 99;
+    background-color: #575a65;
+    border-radius: 100%;
   }
-
 }

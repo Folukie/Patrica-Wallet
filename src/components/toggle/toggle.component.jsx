@@ -13,15 +13,15 @@ const Toggle = () => {
         toggle={setOpen}
         size={22}
         easing="ease-in"
-        color="#9DA8B6"
+        color="#fff"
         duration={0.4}
         onToggle={(toggled) => {
-            const sidebar = document.querySelector("sidebar");
+          const sidebar = document.querySelector("sidebar");
           if (toggled) {
-           
             sidebar.style.display = "grid";
+            sidebar.style.transform = " translateX(0)";
           } else {
-            sidebar.style.display = "none";
+            sidebar.style.transform = " translateX(-100%)";
           }
         }}
       />
